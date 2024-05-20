@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device width, initial-scale=1.0">
+    <title>Abhishek Joshi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="aj.jpeg" alt="logo" width="100">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li> 
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Mechatronics Engineer</p>
+            <h1>Hi, I'm <span>Abhishek</span><br> from India</h1>
+        </div>
+    </div>
+
+</div>
+
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="aj.jpeg" width="600">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>hello my name is abhishek joshi i am from India.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web interfaces</li>
+                        <li><span>UI?UX</span><br>Designing Web interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>asdf?UX</span><br>Designinsadfsdg Web interfaces</li>
+                        <li><span>UI?UsadfsX</span><br>Designing Wfdsafdeb interfaces</li>
+                        <li><span>UIsadf?UX</span><br>Desdfasigning Web interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>UI?UdX</span><br>Designing Web interfacsadfes</li>
+                        <li><span>UI?sUX</span><br>Designing Web interfacefdds</li>
+                        <li><span>UIa?UX</span><br>Designing Web interfaaaaces</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tablcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+    }
+</script>
+
+</body>
+</html>
