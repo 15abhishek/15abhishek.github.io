@@ -9,17 +9,43 @@
     <script src="https://kit.fontawesome.com/f59f1d94d7.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<script>
+    function handleHome(){
+        window.scrollTo(0, 0);
+        // var ref = document.getElementById("");
+        // ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function handleAbout(){
+        var ref = document.getElementById("about");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function handleProjects(){
+        var ref = document.getElementById("portfolio");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function handleExp(){
+        var ref = document.getElementById("projects");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function handleContact(){
+        var ref = document.getElementById("contact");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+</script>
 <div id="header">
     <div class="container">
         <nav>
             <!-- <img src="aj.jpeg" alt="logo" width="100"> -->
-            <h1 class="logo-text">Abhishek</h1>
+            <h1 class="logo-text" onclick="handleHome()">Abhishek</h1>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li> 
+                <!-- <li><a href="#">Home</a></li> -->
+                <li onclick="handleAbout()"><a>About</a></li>
+                <li onclick="handleExp()"><a>Experience</a></li>
+                <li onclick="handleProjects()"><a>Projects</a></li>
+                <li><a>CV</a></li>
+                <li onclick="handleContact()"><a>Contact</a></li> 
             </ul>
         </nav>
         <!-- <div class="header-text"> -->
@@ -187,7 +213,7 @@
                 console.log("Clicked");                
             }
         </script>
-        <a href="#" class="btn" id="seemore--btn" onclick="handelClick()">See more</a>
+        <a class="btn" id="seemore--btn" onclick="handelClick()">See more</a>
 
         <div class="hidden--worklist" id="hidan--div">
             <div class="work-list">
@@ -256,7 +282,7 @@
     
             </div>
         </div>
-        <a href="#" class="btn" id="seeless--btn" onclick="handelLess()">See less</a>
+        <a class="btn" id="seeless--btn" onclick="handelLess()">See less</a>
     </div>
 </div>
 <!-- contact -->
