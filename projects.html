@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device width, initial-scale=1.0">
+    <title>Abhishek Joshi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f59f1d94d7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<script>
+    function handleHome(){
+        window.scrollTo(0, 0);
+        // var ref = document.getElementById("");
+        // ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function handleAbout(){
+        var ref = document.getElementById("about");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function handleProjects(){
+        var ref = document.getElementById("portfolio");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function handleExp(){
+        var ref = document.getElementById("projects");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function handleContact(){
+        var ref = document.getElementById("contact");
+        ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+</script>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="aj.jpeg" alt="logo" width="100"> -->
+            <h1 class="logo-text" onclick="handleHome()">Abhishek</h1>
+            <ul>
+                <!-- <li><a href="#">Home</a></li> -->
+                <li onclick="handleAbout()"><a href="/index.html">About</a></li>
+                <li onclick="handleExp()"><a href="/index.html">Experience</a></li>
+                <li onclick="handleProjects()"><a href="/index.html">Projects</a></li>
+                <li><a>CV</a></li>
+                <li onclick="handleContact()"><a href="/index.html">Contact</a></li> 
+            </ul>
+        </nav>
+        <!-- <div class="header-text"> -->
+            <!-- <video src="vdo.mp4" autoPlay loop muted ></video> -->
+            <!-- <p>Mechatronics Engineer</p> -->
+            <!-- <h1>Hi, I'm <span>Abhishek</span><br> from India</h1> -->
+        <!-- </div> -->
+    </div>
+</div>
+
+<div class="hero-container-project">
+    <!-- <embed src="https://drive.google.com/file/d/1J_rwaw4luahgZ8R5chYWVoXg7JFVZpZJ/" type="application/pdf"  width="100%" height="700"></embed> -->
+    <iframe src="https://drive.google.com/file/d/1J_rwaw4luahgZ8R5chYWVoXg7JFVZpZJ/preview" type="application/pdf" width="100%" height="700" ></iframe>
+</div>
+
+<script>
+    let paramString = urlString.split('?')[1];
+    let queryString = new URLSearchParams(paramString);
+    console.log(queryString);
+</script>
+
+</body>
+</html>

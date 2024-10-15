@@ -33,6 +33,7 @@
         var ref = document.getElementById("contact");
         ref.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
+
 </script>
 <div id="header">
     <div class="container">
@@ -56,244 +57,251 @@
     </div>
 </div>
 
-<div class="hero-container">
-    <video src="bike.mp4" autoPlay loop muted ></video>
-    <!-- <h1 class="h1--hero">Hi, I'm <span>Abhishek</span><br></h1> -->
-    <!-- <h1>a Mechatronics Engineer<br>who loves Robotics!</h1> -->
-    <h1>Hi, I'm <span>Abhishek</span><br> a Mechatronics Engineer<br>who loves Robotics!</h1>
-    <!-- <p>Welcome to my portfolio!</p> -->
-    <!-- <div class="header-text">
-        <p>Mechatronics Engineer</p>
-        <h1>Hi, I'm <span>Abhishek</span><br> from India</h1>
-    </div> -->
-</div>
+<div class="home" id="master">
+    <div class="hero-container">
+        <video src="vdo.mp4" autoPlay loop muted ></video>
+        <!-- <h1 class="h1--hero">Hi, I'm <span>Abhishek</span><br></h1> -->
+        <!-- <h1>a Mechatronics Engineer<br>who loves Robotics!</h1> -->
+        <h1>Hi, I'm <span>Abhishek!</span><br>Mechatronics Engineer<br>who loves Robotics!</h1>
+        <!-- <p>Welcome to my portfolio!</p> -->
+        <!-- <div class="header-text">
+            <p>Mechatronics Engineer</p>
+            <h1>Hi, I'm <span>Abhishek</span><br> from India</h1>
+        </div> -->
+    </div>
 
-<!-- <video src='vdo-4.mp4' autoPlay loop muted></video> -->
-<!-- about -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="aj.jpeg" width="600">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <br>
-                <p>I am a dedicated mechatronics engineer with a passion for robotics. My interests lie in early stage prototyping
-                     and R&D projects, and my goal is to contribute to the development of robots for space exploration. With a strong 
-                    background in mechatronics, I aim to push the boundaries of what robots can achieve, both on Earth and beyond.
-                </p>
+    <!-- <video src='vdo-4.mp4' autoPlay loop muted></video> -->
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aj.jpeg" width="600">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>I am a dedicated mechatronics engineer with a passion for robotics. My interests lie in early stage prototyping
+                        and R&D projects, and my goal is to contribute to the development of robots for space exploration. With a strong 
+                        background in mechatronics, I aim to push the boundaries of what robots can achieve, both on Earth and beyond.
+                    </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming Languages</span><br>Python, C++, Embedded C, Lua,</li>
-                        <li><span>Tech Stack</span><br>Embedded Systems, Edge Computing, Computer Vision,
-                             Control Systems, Computer Aided Design (CAD), 
-                            SLAM, Swarm robotics, Drones, Machine Learning</li>
-                        <li><span>Tools and Frameworks</span><br>Robot Operating System (ROS2), Gazebo, Copelliasim (V-REP),
-                             GNU Octave, Fusion 360, Git</li>
-                        <li><span>Soft Skills</span><br>Leadership, Creativity, Communication, Problem Solving, Team Work</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Symbiosis University of Applied Sciences, Indore</span><br>Bachelor of Technology in
-                             Mechatronics (2019-2023)</li>
-                        <li><span>Colonel's Academy, Mhow</span><br>Senior Secondary Education</li>
-                        <li><span>St. Joseph's Convent Sr. Sec. School, Ratlam</span><br>Primary Education</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>e-Yantra, Indian Institute of Technology, Bombay</span><br>Senior Project Technical Assistant (August 2023 - present)</li>
-                        <li><span>Volvo Eicher Commercial Vehicles Ltd., Pithampur</span><br>R&D Intern (June 2022 – December 2022)</li>
-                        <li><span>Delite Automac Pvt. Ltd.</span><br>Summer Intern (July 2021 - September 2021</li>
-                    </ul>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, C++, Embedded C, Lua,</li>
+                            <li><span>Tech Stack</span><br>Embedded Systems, Edge Computing, Computer Vision,
+                                Control Systems, Computer Aided Design (CAD), 
+                                SLAM, Swarm robotics, Drones, Machine Learning</li>
+                            <li><span>Tools and Frameworks</span><br>Robot Operating System (ROS2), Gazebo, Copelliasim (V-REP),
+                                GNU Octave, Fusion 360, Git</li>
+                            <li><span>Soft Skills</span><br>Leadership, Creativity, Communication, Problem Solving, Team Work</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Symbiosis University of Applied Sciences, Indore</span><br>Bachelor of Technology in
+                                Mechatronics (2019-2023)</li>
+                            <li><span>Colonel's Academy, Mhow</span><br>Senior Secondary Education</li>
+                            <li><span>St. Joseph's Convent Sr. Sec. School, Ratlam</span><br>Primary Education</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>e-Yantra, Indian Institute of Technology, Bombay</span><br>Senior Project Technical Assistant (August 2023 - present)</li>
+                            <li><span>Volvo Eicher Commercial Vehicles Ltd., Pithampur</span><br>R&D Intern (June 2022 – December 2022)</li>
+                            <li><span>Delite Automac Pvt. Ltd.</span><br>Summer Intern (July 2021 - September 2021</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- projects -->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">Experience</h1>
-        <div class="projects-list">
-            <div>
-                <i class="fa-solid fa-gear"></i>
-                <h2>e-Yantra, IIT Bombay</h2>
-                <p>Contributing as a Developer to the E-Yantra Project. Mechanical design and software development for 
-                    Research Projects in the Lab. Individual and collaborative Research projects in mechatronics. 
-                    Mentor in e-Yantra Robotics Competition (eYRC).
-                </p>
-                    <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-chart-line"></i>
-                <h2>Volvo-Eicher CV</h2>
-                <p>Worked on Digital Twin, data analytics, telematics, connected vehicles, EV, and ADAS projects, contributing 
-                    to advanced vehicle technology development. Conducted research and development activities, enhancing vehicle 
-                    performance and connectivity through innovative solutions and data-driven insights.
+    <!-- projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>e-Yantra, IIT Bombay</h2>
+                    <p>Contributing as a Developer to the E-Yantra Project. Mechanical design and software development for 
+                        Research Projects in the Lab. Individual and collaborative Research projects in mechatronics. 
+                        Mentor in e-Yantra Robotics Competition (eYRC).
+                    </p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Volvo-Eicher CV</h2>
+                    <p>Worked on Digital Twin, data analytics, telematics, connected vehicles, EV, and ADAS projects, contributing 
+                        to advanced vehicle technology development. Conducted research and development activities, enhancing vehicle 
+                        performance and connectivity through innovative solutions and data-driven insights.
 
-                </p>
-                    <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-industry"></i>
-                <h2>Delite Automac</h2>
-                <p>Provided 2D drawings for machining of spare automotive parts. Worked on various machining tools like lathe, power press, hydraulic press, shearing 
-                    and bending machines.Contributed in production efficiency improvement planning for the manufacturing plant. 
-                </p>
-                    <a href="#">Learn more</a>
+                    </p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-industry"></i>
+                    <h2>Delite Automac</h2>
+                    <p>Provided 2D drawings for machining of spare automotive parts. Worked on various machining tools like lathe, power press, hydraulic press, shearing 
+                        and bending machines.Contributed in production efficiency improvement planning for the manufacturing plant. 
+                    </p>
+                        <a href="#">Learn more</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- portfolio -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="media/rover.jpg" width="10">
-                <div class="layer">
-                    <h3>Realtime Motion Capture System</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam</p>
-                    <a href="#">link</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="media/rover.jpg" width="10">
-                <div class="layer">
-                    <h3>Autonomous Rover</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam</p>
-                    <a href="#">link</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="media/quadruped_leg.jpg">
-                <div class="layer">
-                    <h3>Multi-legged Robots</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam</p>
-                    <a href="#">link</a>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            function handelClick() {
-                const button = document.getElementById("seemore--btn");
-                const hidan = document.getElementById("hidan--div");
-                const _hidan = document.getElementById("hidan--div2");
-                const _button = document.getElementById("seeless--btn");
-                button.style.display = "none";
-                _button.style.display = "block";
-                hidan.style.display = "block";
-                _hidan.style.display = "block";
-                console.log("Clicked");                
-            }
-
-            function handelLess() {
-                const button = document.getElementById("seeless--btn");
-                const _button = document.getElementById("seemore--btn");
-                const hidan = document.getElementById("hidan--div");
-                const _hidan = document.getElementById("hidan--div2");
-                button.style.display = "none";
-                _button.style.display = "block";
-                hidan.style.display = "none";
-                _hidan.style.display = "none";
-                console.log("Clicked");                
-            }
-        </script>
-        <a class="btn" id="seemore--btn" onclick="handelClick()">See more</a>
-
-        <div class="hidden--worklist" id="hidan--div">
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="media/ecube.jpeg">
+                    <img src="media/rover.jpg" width="10">
                     <div class="layer">
-                        <h3>Self-balancing Cube</h3>
+                        <h3>Realtime Motion Capture System</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam</p>
-                        <a href="#">link</a>
+                        <a onclick="handleLink()">link</a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="media/turret.jpg">
-                    <div class="layer">
-                        <h3>Automatic Projectile Launching Robot</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam</p>
-                        <a href="#">link</a>
-                    </div>
-                </div>
-    
-                <div class="work">
-                    <img src="media/bike.jpeg">
-                    <div class="layer">
-                        <h3>Self-balancing Bike</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam</p>
-                        <a href="#">link</a>
-                    </div>
-                </div>
-                <!-- <div class="work">
-                    <img src="media/leviatation.jpeg">
-                    <div class="layer">
-                        <h3>Acoustic Leviatation</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam</p>
-                        <a href="#">link</a>
-                    </div>
-                </div> -->
-    
-            </div>
-        </div>
-
-        <div class="hidden--worklist" id="hidan--div2">
-            <div class="work-list">
-                <!-- <div class="work">
-                    <img src="aj.jpeg">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam</p>
-                        <a href="#">link</a>
-                    </div>
-                </div>
-    
-                <div class="work">
-                    <img src="aj.jpeg">
+                    <img src="media/rover.jpg" width="10">
                     <div class="layer">
                         <h3>Autonomous Rover</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam</p>
-                        <a href="#">link</a>
+                        <a onclick="handleLink()">link</a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="aj.jpeg">
+                    <img src="media/quadruped_leg.jpg">
                     <div class="layer">
-                        <h3>Social Media App</h3>
+                        <h3>Multi-legged Robots</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam</p>
-                        <a href="#">link</a>
+                        <a onclick="handleLink()">link</a>
                     </div>
-                </div> -->
-    
+                </div>
             </div>
+
+            <script>
+                function handelClick() {
+                    const button = document.getElementById("seemore--btn");
+                    const hidan = document.getElementById("hidan--div");
+                    const _hidan = document.getElementById("hidan--div2");
+                    const _button = document.getElementById("seeless--btn");
+                    button.style.display = "none";
+                    _button.style.display = "block";
+                    hidan.style.display = "block";
+                    _hidan.style.display = "block";
+                    console.log("Clicked");                
+                }
+
+                function handelLess() {
+                    const button = document.getElementById("seeless--btn");
+                    const _button = document.getElementById("seemore--btn");
+                    const hidan = document.getElementById("hidan--div");
+                    const _hidan = document.getElementById("hidan--div2");
+                    button.style.display = "none";
+                    _button.style.display = "block";
+                    hidan.style.display = "none";
+                    _hidan.style.display = "none";
+                    console.log("Clicked");                
+                }
+            </script>
+            <a class="btn" id="seemore--btn" onclick="handelClick()">See more</a>
+
+            <div class="hidden--worklist" id="hidan--div">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="media/ecube.jpeg">
+                        <div class="layer">
+                            <h3>Self-balancing Cube</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam</p>
+                            <a onclick="handleLink()">link</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="media/turret.jpg">
+                        <div class="layer">
+                            <h3>Automatic Projectile Launching Robot</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam</p>
+                            <a onclick="handleLink()">link</a>
+                        </div>
+                    </div>
+        
+                    <div class="work">
+                        <img src="media/bike.jpeg">
+                        <div class="layer">
+                            <h3>Self-balancing Bike</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam</p>
+                            <a onclick="handleLink()">link</a>
+                        </div>
+                    </div>
+                    <!-- <div class="work">
+                        <img src="media/leviatation.jpeg">
+                        <div class="layer">
+                            <h3>Acoustic Leviatation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam</p>
+                            <a href="#">link</a>
+                        </div>
+                    </div> -->
+        
+                </div>
+            </div>
+
+            <div class="hidden--worklist" id="hidan--div2">
+                <div class="work-list">
+                    <!-- <div class="work">
+                        <img src="aj.jpeg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam</p>
+                            <a href="#">link</a>
+                        </div>
+                    </div>
+        
+                    <div class="work">
+                        <img src="aj.jpeg">
+                        <div class="layer">
+                            <h3>Autonomous Rover</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam</p>
+                            <a href="#">link</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="aj.jpeg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam</p>
+                            <a href="#">link</a>
+                        </div>
+                    </div> -->
+        
+                </div>
+            </div>
+            <a class="btn" id="seeless--btn" onclick="handelLess()">See less</a>
         </div>
-        <a class="btn" id="seeless--btn" onclick="handelLess()">See less</a>
     </div>
 </div>
+
+<!-- <div class="hero-container-project" id="project-div" onclick="dishapear()"></div>
+    <iframe src="https://drive.google.com/file/d/1J_rwaw4luahgZ8R5chYWVoXg7JFVZpZJ/preview" type="application/pdf" width="100%" height="700" ></iframe>
+</div> -->
+
 <!-- contact -->
 <div id="contact">
     <div class="container">
@@ -318,7 +326,6 @@
     </div>
 </div>
 
-
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links");
@@ -334,6 +341,21 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+
+    const home = document.getElementById("master")
+    const project = document.getElementById("project-div")
+
+    function dishapear() {
+        console.log("here");
+        project.style.display = "none";
+    }
+
+    function handleLink() {
+        console.log("GG");
+        home.style.display = "none";
+        project.style.display = "block";
+    }
+
 </script>
 
 </body>
