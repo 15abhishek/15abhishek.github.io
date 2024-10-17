@@ -45,7 +45,7 @@
                 <li onclick="handleAbout()"><a>About</a></li>
                 <li onclick="handleExp()"><a>Experience</a></li>
                 <li onclick="handleProjects()"><a>Projects</a></li>
-                <li><a>CV</a></li>
+                <li><a onclick="changeIframeSrc('pdf.pdf')">CV</a></li>
                 <li onclick="handleContact()"><a>Contact</a></li> 
             </ul>
         </nav>
@@ -60,9 +60,11 @@
 <div class="home" id="master">
     <div class="hero-container">
         <video src="vdo.mp4" autoPlay loop muted ></video>
-        <!-- <h1 class="h1--hero">Hi, I'm <span>Abhishek</span><br></h1> -->
+        <div class="hero--statment">
+            <h1 class="h1--hero">Hi, I'm <span>Abhishek</span><br></h1>
+        </div>
         <!-- <h1>a Mechatronics Engineer<br>who loves Robotics!</h1> -->
-        <h1>Hi, I'm <span>Abhishek!</span><br>Mechatronics Engineer<br>who loves Robotics!</h1>
+        <!-- <h1>Hey, I'm <span>Abhishek!</span><br>Mechatronics Engineer<br>who loves Robotics!</h1> -->
         <!-- <p>Welcome to my portfolio!</p> -->
         <!-- <div class="header-text">
             <p>Mechatronics Engineer</p>
@@ -133,7 +135,7 @@
                         Research Projects in the Lab. Individual and collaborative Research projects in mechatronics. 
                         Mentor in e-Yantra Robotics Competition (eYRC).
                     </p>
-                        <a href="#">Learn more</a>
+                        <a onclick="changeIframeSrc('https://cse-erts.github.io/cs684/')">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-chart-line"></i>
@@ -143,7 +145,7 @@
                         performance and connectivity through innovative solutions and data-driven insights.
 
                     </p>
-                        <a href="#">Learn more</a>
+                        <a onclick="changeIframeSrc('pdf.pdf')">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-industry"></i>
@@ -151,7 +153,7 @@
                     <p>Provided 2D drawings for machining of spare automotive parts. Worked on various machining tools like lathe, power press, hydraulic press, shearing 
                         and bending machines.Contributed in production efficiency improvement planning for the manufacturing plant. 
                     </p>
-                        <a href="#">Learn more</a>
+                        <a onclick="changeIframeSrc('pdf.pdf')">Learn more</a>
                 </div>
             </div>
         </div>
@@ -167,7 +169,7 @@
                         <h3>Realtime Motion Capture System</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam</p>
-                        <a onclick="handleLink()">link</a>
+                        <a onclick="changeIframeSrc('pdf.pdf')">link</a>
                     </div>
                 </div>
                 <div class="work">
@@ -176,7 +178,7 @@
                         <h3>Autonomous Rover</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam</p>
-                        <a onclick="handleLink()">link</a>
+                        <a onclick="changeIframeSrc('eCube.pdf')">link</a>
                     </div>
                 </div>
                 <div class="work">
@@ -185,12 +187,36 @@
                         <h3>Multi-legged Robots</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam</p>
-                        <a onclick="handleLink()">link</a>
+                        <a onclick="changeIframeSrc('pdf.pdf')">link</a>
                     </div>
                 </div>
             </div>
 
+            <!-- Popuop -->
+            <div class="popup" id="videoPopup">
+                <span class="close-btn" id="closePopup" onclick="handlePopup()">&times;</span>
+                <iframe id="popup_iframe" src="eCube.pdf" type="application/pdf" width="100%" height="700" ></iframe>
+                </div>
+            <!-- popup end -->
+                <!-- Background overlay -->
+                <div class="overlay" id="overlay"></div>
+
             <script>
+                // Get the elements
+                const videoPopup = document.getElementById('videoPopup');
+                const overlay = document.getElementById('overlay');
+
+                function handlePopup(){
+                    videoPopup.style.display = 'none';
+                    overlay.style.display = 'none';
+                    console.log("Close Popup");
+                }
+
+                overlay.onclick = function() {
+                videoPopup.style.display = 'none';
+                overlay.style.display = 'none';
+                };
+
                 function handelClick() {
                     const button = document.getElementById("seemore--btn");
                     const hidan = document.getElementById("hidan--div");
@@ -225,7 +251,7 @@
                             <h3>Self-balancing Cube</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam</p>
-                            <a onclick="handleLink()">link</a>
+                            <a onclick="changeIframeSrc('pdf.pdf')">link</a>
                         </div>
                     </div>
                     <div class="work">
@@ -234,7 +260,7 @@
                             <h3>Automatic Projectile Launching Robot</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam</p>
-                            <a onclick="handleLink()">link</a>
+                            <a onclick="changeIframeSrc('pdf.pdf')">link</a>
                         </div>
                     </div>
         
@@ -244,7 +270,7 @@
                             <h3>Self-balancing Bike</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam</p>
-                            <a onclick="handleLink()">link</a>
+                            <a onclick="changeIframeSrc('pdf.pdf')">link</a>
                         </div>
                     </div>
                     <!-- <div class="work">
@@ -303,18 +329,13 @@
 </div> -->
 
 <!-- contact -->
-<div id="contact">
+<!-- <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-paper-plane"></i>15abhishek.j@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i>9111707000</p>
-                <div class="social-icons">
-                    <a href="https://wa.me/919111707000"><i class="fa-brands fa-square-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/15abhishek"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/15abhishek"><i class="fa-brands fa-square-github"></i></a>
-            </div>
             </div>
             <div class="contact-right">
                 <p>I am a dedicated mechatronics engineer with a passion for robotics. My interests lie in early stage prototyping
@@ -324,7 +345,29 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<div class="footer">
+    <div class="footer-column">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i>15abhishek.j@gmail.com</p>
+      <p><i class="fa-solid fa-square-phone"></i>9111707000</p>
+    </div>
+    <div class="footer-column">
+      <p>
+        I am a dedicated mechatronics engineer with a passion for robotics. My interests lie in early stage prototyping 
+        and R&D projects, and my goal is to contribute to the development of robots for space exploration. With a strong 
+        background in mechatronics, I aim to push the boundaries of what robots can achieve, both on Earth and beyond.
+      </p>
+    </div>
+    <div class="footer-column">
+        <div class="social-icons">
+            <a href="https://wa.me/919111707000"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/15abhishek"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/15abhishek"><i class="fa-brands fa-square-github"></i></a>
+    </div>
+    </div>
+  </div>
 
 <script>
 
@@ -354,6 +397,13 @@
         console.log("GG");
         home.style.display = "none";
         project.style.display = "block";
+    }
+
+    function changeIframeSrc(newSrc) {
+      const iframe = document.getElementById('popup_iframe');
+      iframe.src = newSrc;  // Change the src attribute
+      videoPopup.style.display = 'block';
+      overlay.style.display = 'block';
     }
 
 </script>
