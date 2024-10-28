@@ -11,6 +11,7 @@
     <style>
         table {
             width: 80%;
+            border-color: #8d8d8d;
         }
         th {
             color: #9acefb;
@@ -34,41 +35,46 @@
 <body>
 
 <center>
-    <h1>eCube</h1>
-    <p><i>Implementation & Analysis of various Control Techniques to Balance a Cube</i></p><br>
+    <h1>MoCap</h1>
+    <p><i>Realtime Motion Capture System </i></p><br>
 
 <iframe id="popup_iframe" src="https://drive.google.com/file/d/1HZai4tXaz-WckCQJf3QgbHZdd8qQFtmk/preview" allow="autoPlay" width="100%" height="600"></iframe>
 <br><br>
 
-<table style="width:80%"  >
+<table border="all">
     <tr>
         <th>Description:</th>
-        <td>A cube-shaped Reaction wheel-based 3D Inverted Pendulum. LQR (Linear Quadratic Regulator) and PID control techniques were applied in 
-        Simulation followed by implementation on the physical robot to balance the cube on its Vertex and Edges
+        <td>
+            A low-cost motion capture system that can track and record spatial movements of multiple objects 
+            using IR-based markers and up to 4 cameras. The output data rate is up to 40Hz at 1080p and 
+            70Hz at 720p. Pose estimation accuracy is up to ±0.5 mm for stationary targets and ±2.5 mm for 
+            tracking dynamic objects such as quadrotors. 
         </td>
     </tr>
     <tr>
         <th>Tech Stack:</th>
-        <td>Control Systems (LQR), Embedded Systems, CAD Modelling, C++, Lua, Mathematical 
-        Modelling (GNU Octave), Robot Simulation (CopelliaSim/V-REP)
+        <td>
+            Computer Vision, Control Systems, ROS2, Python, CAD Modelling 
         </td>
     </tr>
     <tr>
       <th>Hardware:</th>
-      <td>ESP32 microcontroller, BLDC Motors, ICM-20948 IMU</td>
+      <td>
+        High-speed Cameras, Quadcopters, IR LEDs
+      </td>
     </tr>
     <tr>
-        <th>Last Update:</th>
+        <!-- <th>Last Update:</th>
         <td>A cube-shaped Reaction wheel-based 3D Inverted Pendulum. LQR (Linear Quadratic Regulator) and PID control techniques were applied in 
           Simulation followed by implementation on the physical robot to balance the cube on its Vertex and Edges</td>
       </tr>
       <tr>
         <th>Future Work:</th>
         <td>A cube-shaped Reaction wheel-based</td>
-      </tr>
+      </tr> -->
       <tr>
         <th>Project Link:</th>
-        <td>555 77 855</td>
+        <td><a href="https://tinyurl.com/realtime-mocap" style="color: #ffffff;">https://tinyurl.com/realtime-mocap</a> (Please open this link in a new tab)</td>
       </tr>
   </table>
 </center>

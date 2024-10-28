@@ -96,9 +96,12 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <br>
-                    <p>I am a dedicated mechatronics engineer with a passion for robotics. My interests lie in early stage prototyping
-                        and R&D projects, and my goal is to contribute to the development of robots for space exploration. With a strong 
-                        background in mechatronics, I aim to push the boundaries of what robots can achieve, both on Earth and beyond.
+                    <p style="text-align: justify;">
+                        I am a dedicated mechatronics engineer with a passion for robotics. My research interests center around achieving autonomy 
+                        in complex systems, particularly in challenging environments like space exploration. I’m focused on developing 
+                        advanced control architectures that drive smarter, adaptive robots capable of handling the unexpected. My 
+                        interests span multi-agent systems, non-linear and learning-based control, with the goal of pushing the 
+                        boundaries of what autonomous systems can achieve in complex and dynamic settings.
                     </p>
 
                     <div class="tab-titles">
@@ -106,7 +109,7 @@
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="skills" style="text-align: justify;">
                         <ul>
                             <li><span>Programming Languages</span><br>Python, C++, Embedded C, Lua,</li>
                             <li><span>Tech Stack</span><br>Embedded Systems, Edge Computing, Computer Vision,
@@ -143,9 +146,9 @@
             <div class="projects-list">
                 <div>
                     <i class="fa-solid fa-gear"></i>
-                    <h2>e-Yantra, IIT Bombay</h2>
-                    <p>Contributing as a Developer to the E-Yantra Project. Mechanical design and software development for 
-                        Research Projects in the Lab. Individual and collaborative Research projects in mechatronics. 
+                    <h2>e-Yantra, ERTS Lab, IIT Bombay</h2>
+                    <p>Contributing as a Developer to the e-Yantra Project. Mechanical design and software development for 
+                        research projects in the Lab. Individual and collaborative research projects in robotics. 
                         Mentor in e-Yantra Robotics Competition (eYRC).
                     </p>
                         <a onclick="changeIframeSrc('./webpages/work_ex/work_eyantra.html')">Learn more</a>
@@ -154,7 +157,7 @@
                     <i class="fa-solid fa-chart-line"></i>
                     <h2>Volvo-Eicher CV</h2>
                     <p>Worked on Digital Twin, data analytics, telematics, connected vehicles, EV, and ADAS projects, contributing 
-                        to advanced vehicle technology development. Conducted research and development activities, enhancing vehicle 
+                        towards advanced vehicle technology development. Conducted research and development activities, enhancing vehicle 
                         performance and connectivity through innovative solutions and data-driven insights.
 
                     </p>
@@ -166,7 +169,7 @@
                     <p>Provided 2D drawings for machining of spare automotive parts. Worked on various machining tools like lathe, power press, hydraulic press, shearing 
                         and bending machines.Contributed in production efficiency improvement planning for the manufacturing plant. 
                     </p>
-                        <a onclick="changeIframeSrc('./webpages/work_ex/work_delite.html')">Learn more</a>
+                        <!-- <a onclick="changeIframeSrc('./webpages/work_ex/work_delite.html')">Learn more</a> -->
                 </div>
             </div>
         </div>
@@ -180,8 +183,9 @@
                     <img src="media/img/ecube.jpeg">
                     <div class="layer">
                         <h3>Self-balancing Cube</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam</p>
+                        <p>
+                            A cube-shaped Reaction wheel-based 3D Inverted Pendulum that balances using LQR.
+                        </p>
                         <a onclick="changeIframeSrc('./webpages/projects/ecube.html')">link</a>
                     </div>
                 </div>
@@ -189,17 +193,20 @@
                     <img src="media/img/mocap.jpg" width="10">
                     <div class="layer">
                         <h3>Realtime Motion Capture System</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam</p>
+                        <p>
+                            A low-cost motion capture system that can track and record spatial movements of multiple objects
+                            using IR LED based markers and up to 4 cameras.
+                        </p>
                         <a onclick="changeIframeSrc('./webpages/projects/mocap.html')">link</a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="media/img/rover.jpg" width="10">
                     <div class="layer">
-                        <h3>Autonomous Rover</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam</p>
+                        <h3>Autonomous Rover(s)</h3>
+                        <p>
+                            ROS-based SLAM implementation and autonomous navigation in multiple differential drive and skid-steer robots.
+                        </p>
                         <a onclick="changeIframeSrc('./webpages/projects/agr.html')">link</a>
                     </div>
                 </div>
@@ -262,8 +269,9 @@
                         <img src="media/img/quadruped_leg.jpg">
                         <div class="layer">
                             <h3>Multi-legged Robots</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam</p>
+                            <p>
+                                Development of small quadruped robot to implement a multi-agent approach for the bot's motion. (Work in progress)
+                            </p>
                             <a onclick="changeIframeSrc('./webpages/projects/quadruped.html')">link</a>
                         </div>
                     </div>
@@ -271,18 +279,19 @@
                         <img src="media/img/bike.jpeg">
                         <div class="layer">
                             <h3>Self-balancing Bike</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam</p>
+                            <p>
+                                A reaction wheel based mini-bike that can be balanced using the LQR control technique to balance 
+                                the bike both at rest and in motion.
+                            </p>
                             <a onclick="changeIframeSrc('./webpages/projects/db.html')">link</a>
                         </div>
                     </div>
                     <div class="work">
                         <img src="media/img/turret.jpg">
                         <div class="layer">
-                            <h3>Automatic Projectile Launching Robot</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam</p>
-                            <a onclick="changeIframeSrc('./webpages/projects/turret.html')">link</a>
+                            <h3>Miscellaneous/Curiosity Projects</h3>
+                            <p>A collection of all other projects that I've contributed to.</p>
+                            <a onclick="changeIframeSrc('./webpages/projects/misc_projects.html')">link</a>
                         </div>
                     </div>
         
@@ -370,8 +379,9 @@
                 <div class="about2-col-2">
                     <h1 class="sub-title">Let's Connect!</h1>
                     <br>
-                    <p>If you're interested in collaborating on some project or want to say hi, please feel free to contact me.<br>
-                        I'm always happy to talk about robotics and space!
+                    <p>If you’re interested in teaming up on a project, have a question, or just want to say hello, don’t 
+                        hesitate to reach out! I’m always up for a good conversation about robotics, space exploration, 
+                        or anything that sparks curiosity. Looking forward to connecting!
                     </p>
 
                     <div class="tab-titles">

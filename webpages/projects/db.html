@@ -11,6 +11,7 @@
     <style>
         table {
             width: 80%;
+            border-color: #8d8d8d;
         }
         th {
             color: #9acefb;
@@ -34,30 +35,34 @@
 <body>
 
 <center>
-    <h1>eCube</h1>
-    <p><i>Implementation & Analysis of various Control Techniques to Balance a Cube</i></p>  <br>
+    <h1>Self-balancing Bike</h1>
+    <p><i>Autonomous Navigation & Balancing of a 2-wheeled Bike </i></p>  <br>
 
 <iframe id="popup_iframe" src="https://drive.google.com/file/d/1iZH-BkEdpAPMM62n2DUeS6btU0r35-Qg/preview" allow="autoPlay" width="100%" height="600"></iframe>
 <br><br><br>
 
-<table style="width:80%"  >
+<table border="all">
     <tr>
         <th>Description:</th>
-        <td>A cube-shaped Reaction wheel-based 3D Inverted Pendulum. LQR (Linear Quadratic Regulator) and PID control techniques were applied in 
-        Simulation followed by implementation on the physical robot to balance the cube on its Vertex and Edges
+        <td>
+            A reaction wheel based mini-bike that can be balanced using the LQR control technique to balance 
+            the bike both at rest and in motion. The mathematical model of the bike is based on the principle 
+            of Inverted Pendulum. Additionally, path-planning and line following algorithms were implemented for autonomous navigation. 
         </td>
     </tr>
     <tr>
         <th>Tech Stack:</th>
-        <td>Control Systems (LQR), Embedded Systems, CAD Modelling, C++, Lua, Mathematical 
-        Modelling (GNU Octave), Robot Simulation (CopelliaSim/V-REP)
+        <td>
+            Control Systems, Embedded Systems, CAD Modelling, C++, Lua Mathematical Modelling (GNU Octave), Robot Simulation (CopelliaSim/V-REP) 
         </td>
     </tr>
     <tr>
       <th>Hardware:</th>
-      <td>ESP32 microcontroller, BLDC Motors, ICM-20948 IMU</td>
+      <td>
+        AtMega 2560 microcontroller, BLDC Motors, MPU6050 IMU, MG90s Servo Motor, DC Motor 
+      </td>
     </tr>
-    <tr>
+    <!-- <tr>
         <th>Last Update:</th>
         <td>A cube-shaped Reaction wheel-based 3D Inverted Pendulum. LQR (Linear Quadratic Regulator) and PID control techniques were applied in 
           Simulation followed by implementation on the physical robot to balance the cube on its Vertex and Edges</td>
@@ -65,12 +70,14 @@
       <tr>
         <th>Future Work:</th>
         <td>A cube-shaped Reaction wheel-based</td>
-      </tr>
+      </tr> -->
       <tr>
         <th>Project Link:</th>
-        <td>555 77 855</td>
+        <td><a href="https://tinyurl.com/balancing-bike" style="color: #ffffff;">https://tinyurl.com/balancing-bike</a> (Please open this link in a new tab)</td>
       </tr>
   </table>
+
+  <iframe src="https://drive.google.com/file/d/12sqtssxGDcVqk5H2yKuB5o5h6T37siXJ/preview" width="450" height="630" allow="autoplay"></iframe>
 </center>
 
 </body>

@@ -11,6 +11,7 @@
     <style>
         table {
             width: 80%;
+            border-color: #8d8d8d;
         }
         th {
             color: #9acefb;
@@ -34,41 +35,52 @@
 <body>
 
 <center>
-    <h1>eCube</h1>
-    <p><i>Implementation & Analysis of various Control Techniques to Balance a Cube</i></p>  <br>
+    <h1>Autonomous Ground Robots</h1>
+    <p><i>ROS-based SLAM Implementation and Hardware Optimization for Small Differential Drive Robot</i></p>  <br>
 
 <iframe id="popup_iframe" src="https://drive.google.com/file/d/1JIJq3VFv1ECLUWPRa1Ip6G6jt_-j-CJr/preview" allow="autoPlay" width="100%" height="600"></iframe>
 <br><br><br>
 
-<table style="width:80%"  >
+<table border="all">
     <tr>
         <th>Description:</th>
-        <td>A cube-shaped Reaction wheel-based 3D Inverted Pendulum. LQR (Linear Quadratic Regulator) and PID control techniques were applied in 
-        Simulation followed by implementation on the physical robot to balance the cube on its Vertex and Edges
+        <td>
+            A skid-steer drive bot that uses ESP32 to share 2D LiDAR pointCloud and Odometry data over 
+            micro-ROS for Simultaneous Localization And Mapping (SLAM) and autonomous navigation. 
+            FreeRTOS on the ESP32 manages UDP WiFi data transfer and sensor data processing across the 
+            ESP’s two cores. Odometry-based localization was achieved with a 0.2% error while navigating 
+            across a 10x10 ft. arena at an average speed of 0.15 m/s. Autonomous Navigation in the mapped 
+            arena achieved a position accuracy of 0.2 m and orientation accuracy of 0.1 radians. An Extended 
+            Kalman Filter (EKF)was developed to fuse encoder and IMU data for noise reduction. This project 
+            was also done on 2 other versions: <br>
+            i. Differential drive bots with Jetson Orin Nano and Arduino UNO. <br>
+            ii. Differential drive bot with Raspberry Pi 4B and Arduino UNO 
         </td>
     </tr>
     <tr>
         <th>Tech Stack:</th>
-        <td>Control Systems (LQR), Embedded Systems, CAD Modelling, C++, Lua, Mathematical 
-        Modelling (GNU Octave), Robot Simulation (CopelliaSim/V-REP)
+        <td>
+            ROS2, SLAM, Nav2, Embedded Systems, RTOS, Python, C++, Model Simulation (Gazebo)
         </td>
     </tr>
     <tr>
       <th>Hardware:</th>
-      <td>ESP32 microcontroller, BLDC Motors, ICM-20948 IMU</td>
+        <td>
+            Mini-differential drive robot, 360° 2D LiDAR, ESP32 microcontroller 
+        </td>
     </tr>
     <tr>
-        <th>Last Update:</th>
+        <!-- <th>Last Update:</th>
         <td>A cube-shaped Reaction wheel-based 3D Inverted Pendulum. LQR (Linear Quadratic Regulator) and PID control techniques were applied in 
           Simulation followed by implementation on the physical robot to balance the cube on its Vertex and Edges</td>
       </tr>
       <tr>
         <th>Future Work:</th>
         <td>A cube-shaped Reaction wheel-based</td>
-      </tr>
+      </tr> -->
       <tr>
         <th>Project Link:</th>
-        <td>555 77 855</td>
+        <td><a href="https://tinyurl.com/ros-based-rover" style="color: #ffffff;">https://tinyurl.com/ros-based-rover</a> (Please open this link in a new tab)</td>
       </tr>
   </table>
 </center>
